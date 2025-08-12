@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotlight 2 - Изучаем алфавит</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Новый шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="padding-top: 8vh;">
+        <h1 class="main-title">Spotlight 2 - Изучаем алфавит</h1>
+        <h2 class="subtitle">My Letters</h2>
+        
+        <div class="button-container">
+            <button class="button" onclick="location.href='learn.html'">Обучение</button>
+            <button class="button" onclick="location.href='games.html'">Игры</button>
+            <button class="button" onclick="location.href='test.html'">Тест</button>
+        </div>
+    </div>
+
+    <img src="images/logo.png" alt="Логотип" class="logo">
+    <div class="copyright">©Вершинина Екатерина Ивановна, 2025</div>
+<script>
+    // Сбрасываем прогресс при загрузке главной страницы
+    localStorage.setItem('gamesProgress', 0);
+</script>
+</body>
+</html>
