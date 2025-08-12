@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мемори</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .memory-container {
+            text-align: center;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            text-shadow: 3px 3px 0 #6A4C93;
+            font-size: 2.5rem;
+        }
+        .round-info {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0 #6A4C93;
+        }
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 30px auto;
+        }
+        .memory-card {
+            height: 120px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .memory-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .memory-card.flipped .memory-card-inner {
+            transform: rotateY(180deg);
+        }
+        .memory-card-front,
+        .memory-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .memory-card-front {
+            background: #6A4C93;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .memory-card-back {
+            background: white;
+            transform: rotateY(180deg);
+        }
+        .memory-card-back img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .result-message {
+            font-size: 2rem;
+            min-height: 60px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="games.html" class="back-link">← В меню игр</a>
+
+    <div class="memory-container">
+        <h1>Мемори</h1>
+        
+
+<div class="stats">
+    <div class="round-info" id="roundInfo">Раунд 1 из 3</div>
+    <div class="moves-counter" id="movesCounter">Ходы: 0</div>
+</div>
+        
+        <div class="memory-grid" id="memoryGrid"></div>
+        
+        <div class="result-message" id="resultMessage"></div>
+    </div>
+
+    <img src="images/logo.png" alt="Логотип" class="logo">
+    <div class="copyright">©Вершинина Екатерина Ивановна, 2025</div>
+
+    <script src="js/game3.js"></script>
+</body>
+</html>

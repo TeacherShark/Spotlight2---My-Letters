@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Игры</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="games-container">
+        <h1 class="games-title">Игры</h1>
+        
+        <div class="games-grid">
+            <!-- Кнопки игр -->
+            <button class="game-button" onclick="location.href='game1.html'">Сопоставь</button>
+            <button class="game-button" onclick="location.href='game2.html'">Выбери верное</button>
+            <button class="game-button" onclick="location.href='game3.html'">Мемори</button>
+            <button class="game-button" onclick="location.href='game4.html'">Послушай и отметь</button>
+        </div>
+
+        <!-- Шкала прогресса -->
+        <div class="progress-container">
+            <h3>Прогресс: <span id="progress-value">0%</span></h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="back-link-container">
+            <a href="index.html" class="back-link-bottom">На стартовую страницу</a>
+        </div>
+    </div>
+
+    <img src="images/logo.png" alt="Логотип" class="logo">
+    <div class="copyright">©Вершинина Екатерина Ивановна, 2025</div>
+
+    <script src="js/games.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Послушай песенку</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .song-game-container {
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            text-shadow: 3px 3px 0 #6A4C93;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .round-info {
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 2px 2px 0 #6A4C93;
+            margin-bottom: 20px;
+        }
+        .audio-player {
+            margin: 20px 0;
+            width: 100%;
+            max-width: 400px;
+        }
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px auto;
+        }
+        .image-option {
+            background: white;
+            border-radius: 15px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        .image-option:hover {
+            transform: scale(1.05);
+        }
+        .image-option.selected {
+            box-shadow: 0 0 0 3px #4CAF50;
+        }
+        .image-option img {
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+        }
+        .check-button {
+            background: #6A4C93;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 15px 0;
+            transition: all 0.3s;
+        }
+        .check-button:hover {
+            transform: scale(1.05);
+        }
+        .result-message {
+            font-size: 1.8rem;
+            min-height: 60px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="games.html" class="back-link">← В меню игр</a>
+
+    <div class="song-game-container">
+        <h1>Послушай песенку и отметь 4 слова</h1>
+        <div class="round-info" id="roundInfo">Раунд 1 из 3</div>
+        
+        <audio controls class="audio-player" id="audioPlayer">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+        
+        <div class="images-grid" id="imagesGrid"></div>
+        
+        <button class="check-button" id="checkButton">Проверить</button>
+        <div class="result-message" id="resultMessage"></div>
+    </div>
+
+    <img src="images/logo.png" alt="Логотип" class="logo">
+    <div class="copyright">©Вершинина Екатерина Ивановна, 2025</div>
+
+    <script src="js/game4.js"></script>
+</body>
+</html>

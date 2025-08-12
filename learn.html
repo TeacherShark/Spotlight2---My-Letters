@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Изучаем алфавит</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="learn-container">
+        <h1 class="learn-title">Изучаем алфавит</h1>
+        
+        <div class="alphabet-grid" id="alphabetGrid">
+            <!-- Буквы появятся здесь -->
+        </div>
+
+        <div class="back-link-container">
+            <a href="index.html" class="back-link-bottom">На главную страницу</a>
+        </div>
+    </div>
+
+    <!-- Карточка с буквой -->
+    <div class="card-overlay" id="cardOverlay">
+        <div class="letter-card">
+            <span class="close-card" onclick="closeCard()">×</span>
+            <h2 id="currentLetter" data-lowercase=""></h2>
+            <div class="image-container">
+                <img id="letterImage" src="" alt="Картинка">
+            </div>
+            <button class="listen-button" onclick="playAudio()">Послушать 🔊</button>
+        </div>
+    </div>
+
+    <img src="images/logo.png" alt="Логотип" class="logo">
+    <div class="copyright">©Вершинина Екатерина Ивановна, 2025</div>
+
+    <script src="js/learn.js"></script>
+</body>
+</html>
