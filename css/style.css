@@ -415,3 +415,15 @@ body {
         font-size: 1.1rem; /* Чуть уменьшаем размер для мобилок */
     }
 }
+/* Глобальные настройки шрифта */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased; /* Для лучшего отображения на мобильных */
+    text-rendering: optimizeLegibility;
+}
+
+/* Принудительно применяем стили для всех карточек */
+.option-card, .option-card * {
+    font-family: inherit !important;
+    text-transform: none !important;
+}
