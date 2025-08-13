@@ -377,4 +377,41 @@ body {
     font-size: 1.5rem;
     color: white;
     text-shadow: 2px 2px 0 #6A4C93;
+
+}
+/* Добавьте эти стили в ваш файл CSS */
+.word-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    text-align: center;
+}
+.big-word {
+    font-size: 2.5rem; /* Очень крупный текст */
+    font-weight: bold;
+    margin: 15px 0;
+    color: #2c3e50;
+    text-align: center;
+    text-transform: lowercase; /* Все слова в нижнем регистре */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Детский шрифт */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.listen-button {
+    margin-top: 10px; /* Добавляем отступ сверху для кнопки */
+}
+/* Для всех текстовых вариантов ответов */
+.text-option {
+    font-family: Arial, sans-serif !important; /* Простой стандартный шрифт */
+    font-size: 1.2rem;
+    text-transform: none !important; /* Отключаем автоматическое преобразование регистра */
+    font-weight: normal !important; /* Нормальное начертание */
+}
+
+/* Для мобильных устройств можно добавить */
+@media (max-width: 768px) {
+    .text-option {
+        font-size: 1.1rem; /* Чуть уменьшаем размер для мобилок */
+    }
 }
